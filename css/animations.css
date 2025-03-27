@@ -1,0 +1,148 @@
+/* Additional animations for NonstaticAI */
+
+/* Animate section titles */
+@keyframes titleGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(157, 78, 221, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(157, 78, 221, 0.7), 0 0 30px rgba(58, 134, 255, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(157, 78, 221, 0.3);
+  }
+}
+
+.animate-title {
+  animation: titleGlow 3s infinite;
+}
+
+/* Neon border effect */
+.neon-border {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.neon-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--neon-purple), var(--neon-blue), var(--neon-green), var(--neon-purple));
+  background-size: 400% 400%;
+  z-index: -1;
+  border-radius: 10px;
+  animation: gradientBorder 10s ease infinite;
+}
+
+@keyframes gradientBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Featured badge */
+.featured-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-blue));
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+  z-index: 1;
+}
+
+/* Pulse animation for CTA buttons */
+@keyframes ctaPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(157, 78, 221, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(157, 78, 221, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(157, 78, 221, 0);
+  }
+}
+
+.btn-cta {
+  animation: ctaPulse 2s infinite;
+}
+
+/* Typing effect for hero text */
+.typing-effect {
+  overflow: hidden;
+  border-right: 3px solid var(--neon-purple);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--neon-purple) }
+}
+
+/* Hover effect for cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Floating animation for featured elements */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: floating 4s ease-in-out infinite;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(90deg, var(--neon-purple), var(--neon-blue), var(--neon-green));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: gradientText 5s linear infinite;
+}
+
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}

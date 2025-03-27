@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Discover the Best AI Tools for Your Needs",
+  "description": "Explore our curated collection of AI tools and software with honest reviews, tutorials, and exclusive affiliate deals.",
+  "image": "https://vernj123.github.io/Nonstatic2/images/logo.png",
+  "author": {
+    "@type": "Organization",
+    "name": "NonstaticAI",
+    "url": "https://vernj123.github.io/Nonstatic2/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "NonstaticAI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vernj123.github.io/Nonstatic2/images/logo.png"
+    }
+  },
+  "datePublished": "2025-03-27",
+  "dateModified": "2025-03-27"
+}

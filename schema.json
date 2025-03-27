@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NonstaticAI",
+  "url": "https://vernj123.github.io/Nonstatic2/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://vernj123.github.io/Nonstatic2/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "description": "Discover the best AI tools and software with honest reviews and affiliate recommendations at NonstaticAI."
+}

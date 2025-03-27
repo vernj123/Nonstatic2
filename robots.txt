@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vernj123.github.io/Nonstatic2/sitemap.xml

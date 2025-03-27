@@ -1,0 +1,16 @@
+{
+  "name": "NonstaticAI",
+  "short_name": "NonstaticAI",
+  "description": "Discover the best AI tools and software with honest reviews and affiliate recommendations",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#9d4edd",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
